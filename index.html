@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <div class="container">
+        <script>
+            const container = document.querySelector('.container');
+            const matrixChars = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン";
+            for(let i = 0; i < 2000; i++) {
+                const span = document.createElement('span');
+                span.textContent = matrixChars[Math.floor(Math.random() * matrixChars.length)];
+                container.appendChild(span);
+            }
+        </script>
+    </div>
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="home" class="hero">
+            <h1>Savva Taiga</h1>
+            <p class="subtitle">Gamer | Biker | Anime watcher | Music Listener</p>
+        </section>
+
+        <section id="about">
+            <h2>A little about me</h2>
+            <p>Hello! I'm Savva Taiga. I am passionate about technology and creating meaningful projects.</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <h3>Biking</h3>
+                    <p>Touching grass and riding down mountains</p>
+                </div>
+                 <div class="hobby-card">
+                    <h3>Music</h3>
+                    <p>Music is my life</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Gaming</h3>
+                    <p>I like to game and just have fun</p>
+                </div>
+               
+                
+                <div class="hobby-card">
+                    <h3>Anime</h3>
+                    <p>Watching and drawing anime</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="formtable">
+                <form class="form">
+                    <span class="input-span">
+                        <label for="email" class="label">Email</label>
+                        <input type="email" name="email" id="email"
+                    /></span>
+                    <span class="input-span">
+                        <label for="password" class="label">Password</label>
+                        <input type="password" name="password" id="password"
+                    /></span>
+                    <input class="submit" type="submit" value="Save your information to the internet" />
+                </form>
+            </div>
+
+            <h2>Contact Me at</h2>
+            <div class="contact-content">
+                <p>SavvaTaiga@gmail.com</p>
+            </div>
+        </section>
+        <footer class="copyright">
+            <p>&copy; 2025 Savva Taiga. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
